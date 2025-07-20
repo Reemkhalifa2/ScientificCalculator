@@ -191,7 +191,20 @@ public class  ScientificCalculator {
         }
 
     }
-    
+    public static double LogarithmBase10(double num) {
+        return Math.log10(num);
+    }
+
+    private static void calculateLogarithmBase10(Scanner InputReader) {
+        System.out.println("Enter number:");
+        double num = InputReader.nextDouble();
+        if (num<0){
+            System.out.println("Invalid input. Please enter positive value.");
+        }else{
+            System.out.println("Result:"+" "+LogarithmBase10(num));
+        }
+
+    }
 
 
 
