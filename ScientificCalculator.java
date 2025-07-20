@@ -13,14 +13,24 @@ public class  ScientificCalculator {
                 break; // this exits the while loop
             }
             switch (choice){
-                case 1:
-                    Addition(InputReader);break;
-                case 2:
-                    Subtraction(InputReader);break;
-                case 3:
-                    Multiplication(InputReader);break;
-                case 4:
-                    Division(InputReader);break;
+                System.out.println("1) Addition");
+                System.out.println("2) Subtraction");
+                System.out.println("3) Multiplication");
+                System.out.println("4) Division");
+                System.out.println("5) Square Root");
+                System.out.println("6) Power (x^y)");
+                System.out.println("7) Sine");
+                System.out.println("8) Cosine");
+                System.out.println("9) Tangent");
+                System.out.println("10) Natural Logarithm (ln)");
+                System.out.println("11) Logarithm Base 10");
+                System.out.println("12) Absolute Value");
+                System.out.println("13) Round");
+                System.out.println("14) Ceiling");
+                System.out.println("15) Floor");
+                System.out.println("16) Minimum of two numbers");
+                System.out.println("17) Maximum of two numbers");
+                System.out.println("0) Exit");
                 default:
                     System.out.println("Invalid choice. Please choose from the menu.");
                     break;
@@ -32,9 +42,22 @@ public class  ScientificCalculator {
     }
     public static void DisplayMenu(){
         System.out.println("1) Addition");
-        System.out.println("2) subtraction");
-        System.out.println("3) multiply");
-        System.out.println("4) divide");
+        System.out.println("2) Subtraction");
+        System.out.println("3) Multiplication");
+        System.out.println("4) Division");
+        System.out.println("5) Square Root");
+        System.out.println("6) Power (x^y)");
+        System.out.println("7) Sine");
+        System.out.println("8) Cosine");
+        System.out.println("9) Tangent");
+        System.out.println("10) Natural Logarithm (ln)");
+        System.out.println("11) Logarithm Base 10");
+        System.out.println("12) Absolute Value");
+        System.out.println("13) Round");
+        System.out.println("14) Ceiling");
+        System.out.println("15) Floor");
+        System.out.println("16) Minimum of two numbers");
+        System.out.println("17) Maximum of two numbers");
         System.out.println("0) Exit");
     }
     public static double add(double num1, double num2) {
