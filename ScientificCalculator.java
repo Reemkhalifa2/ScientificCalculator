@@ -113,6 +113,23 @@ public class  ScientificCalculator {
             return 0;
         }
     }
+    public static double SquareRoot(double num){
+        return Math.sqrt(num);
+    }
+    private static double calculateSquareRoot(Scanner InputReader){
+
+        System.out.println("Enter number:");
+        double num = InputReader.nextDouble();
+        if (num<0){
+            System.out.println("Invalid input. Please enter positive value.");
+        }else{
+            System.out.println("Result:"+" "+SquareRoot(num));
+        }
+        return 0;
+
+
+    }
+
 
 
 
