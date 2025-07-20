@@ -148,6 +148,16 @@ public class  ScientificCalculator {
         System.out.println("Result: " + Math.toRadians(result));
 
     }
+    public static double cos(double x){
+        return Math.cos(x);
+    }
+    private static void calculateCosine(Scanner InputReader) {
+        System.out.print("Enter the number: ");
+        double x = InputReader.nextDouble();
+        double result = cos(x);
+        System.out.println("Result: " + Math.toRadians(result));
+
+    }
 
 
 
