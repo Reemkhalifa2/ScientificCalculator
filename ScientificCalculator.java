@@ -243,6 +243,28 @@ public class  ScientificCalculator {
         double num = InputReader.nextDouble();
         System.out.println("Result:"+" "+floorNumber(num));
     }
+    public static double findmin(double num1, double num2) {
+        return Math.min(num1, num2);
+    }
+
+    private static void calculateMin(Scanner InputReader) {
+        System.out.println("Enter number 1:");
+        double num1 = InputReader.nextDouble();
+        System.out.println("Enter number 2:");
+        double num2 = InputReader.nextDouble();
+        System.out.println("Result:"+" "+findmin(num1,num2));
+    }
+    public static double findmax(double num1, double num2) {
+        return Math.min(num1, num2);
+    }
+
+    private static void calculateMax(Scanner InputReader) {
+        System.out.println("Enter number 1:");
+        double num1 = InputReader.nextDouble();
+        System.out.println("Enter number 2:");
+        double num2 = InputReader.nextDouble();
+        System.out.println("Result:"+" "+findmax(num1,num2));
+    }
 
 
 
