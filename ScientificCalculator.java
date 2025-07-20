@@ -117,7 +117,6 @@ public class  ScientificCalculator {
         return Math.sqrt(num);
     }
     private static double calculateSquareRoot(Scanner InputReader){
-
         System.out.println("Enter number:");
         double num = InputReader.nextDouble();
         if (num<0){
@@ -126,9 +125,21 @@ public class  ScientificCalculator {
             System.out.println("Result:"+" "+SquareRoot(num));
         }
         return 0;
-
+    }
+    public static double power(double base, double exponent){
+        return Math.pow(base, exponent);
+    }
+    private static void calculatePower(Scanner InputReader) {
+        System.out.print("Enter the base number: ");
+        double base = InputReader.nextDouble();
+        System.out.print("Enter the exponent: ");
+        double exponent = InputReader.nextDouble();
+        double result = power(base, exponent);
+        System.out.println("Result: " + result);
 
     }
+    
+
 
 
 
