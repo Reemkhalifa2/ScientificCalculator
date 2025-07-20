@@ -142,9 +142,9 @@ public class  ScientificCalculator {
         return Math.sin(radians);
     }
 
-    private static void calculateSine(Scanner inputReader) {
+    private static void calculateSine(Scanner InputReader) {
         System.out.print("Enter angle in degrees: ");
-        double degrees = inputReader.nextDouble();
+        double degrees = InputReader.nextDouble();
         double radians = Math.toRadians(degrees);
         double result = sin(radians);
         System.out.println("Result: " + result);
@@ -154,9 +154,9 @@ public class  ScientificCalculator {
         return Math.cos(radians);
     }
 
-    private static void calculateCosine(Scanner inputReader) {
+    private static void calculateCosine(Scanner InputReader) {
         System.out.print("Enter angle in degrees: ");
-        double degrees = inputReader.nextDouble();
+        double degrees = InputReader.nextDouble();
         double radians = Math.toRadians(degrees);
         double result = cos(radians);
         System.out.println("Result: " + result);
@@ -166,9 +166,9 @@ public class  ScientificCalculator {
         return Math.tan(radians);
     }
 
-    private static void calculateTangent(Scanner inputReader) {
+    private static void calculateTangent(Scanner InputReader) {
         System.out.print("Enter angle in degrees: ");
-        double degrees = inputReader.nextDouble();
+        double degrees = InputReader.nextDouble();
         if (degrees % 180 == 90) {
             System.out.println("Tangent is undefined at " + degrees + " degrees.");
             return;
@@ -177,6 +177,22 @@ public class  ScientificCalculator {
         double result = tangent(radians);
         System.out.println("Result: " + result);
     }
+    public static double NaturalLogarithm(double num) {
+        return Math.log(num);
+    }
+
+    private static void calculateNaturalLogarithm(Scanner InputReader) {
+        System.out.println("Enter number:");
+        double num = InputReader.nextDouble();
+        if (num<0){
+            System.out.println("Invalid input. Please enter positive value.");
+        }else{
+            System.out.println("Result:"+" "+NaturalLogarithm(num));
+        }
+
+    }
+    
+
 
 
 
