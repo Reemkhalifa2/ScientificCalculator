@@ -42,12 +42,19 @@ public class  ScientificCalculator {
         return num1 + num2;
     }
     private static double Addition(Scanner InputReader){
+        try{
         System.out.println("Enter the First number:");
         double FirstNumber = InputReader.nextDouble();
         System.out.println("Enter the second number:");
         double SecondNumber = InputReader.nextDouble();
         System.out.println("Result:"+" "+add(FirstNumber,SecondNumber));
         return 0;
+        }catch (Exception e){
+            System.out.println("Not a number try again");
+            InputReader.nextLine(); // clear invalid input
+            return 0;
+        }
+
 
     }
     public static double sub(double num1, double num2) {
@@ -55,25 +62,37 @@ public class  ScientificCalculator {
         return num1 - num2;
     }
     private static double Subtraction(Scanner InputReader){
-        System.out.println("Enter the First number:");
-        double FirstNumber = InputReader.nextDouble();
-        System.out.println("Enter the second number:");
-        double SecondNumber = InputReader.nextDouble();
-        System.out.println("Result:"+" "+sub(FirstNumber,SecondNumber));
-        return 0;
 
+           try{
+               System.out.println("Enter the First number:");
+               double FirstNumber = InputReader.nextDouble();
+               System.out.println("Enter the second number:");
+               double SecondNumber = InputReader.nextDouble();
+               System.out.println("Result:" + " " + sub(FirstNumber, SecondNumber));
+               return 0;
+           }catch (Exception e){
+               System.out.println("Not a number try again");
+               InputReader.nextLine(); // clear invalid input
+               return 0;
+           }
     }
     public static double mul(double num1, double num2) {
         // Logic for addition
         return num1 * num2;
     }
     private static double Multiplication(Scanner InputReader){
+        try{
         System.out.println("Enter the First number:");
         double FirstNumber = InputReader.nextDouble();
         System.out.println("Enter the second number:");
         double SecondNumber = InputReader.nextDouble();
         System.out.println("Result:"+" "+mul(FirstNumber,SecondNumber));
         return 0;
+        }catch (Exception e){
+            System.out.println("Not a number try again");
+            InputReader.nextLine(); // clear invalid input
+            return 0;
+        }
 
     }
     public static double div(double num1, double num2) {
@@ -81,12 +100,18 @@ public class  ScientificCalculator {
         return num1 / num2;
     }
     private static double Division(Scanner InputReader){
+        try{
         System.out.println("Enter the First number:");
         double FirstNumber = InputReader.nextDouble();
         System.out.println("Enter the second number:");
         double SecondNumber = InputReader.nextDouble();
         System.out.println("Result:"+" "+div(FirstNumber,SecondNumber));
         return 0;
+        }catch (Exception e){
+            System.out.println("Not a number try again"+ e.getMessage());
+            InputReader.nextLine(); // clear invalid input
+            return 0;
+        }
     }
 
 
