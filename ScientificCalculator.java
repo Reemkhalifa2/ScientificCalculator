@@ -138,7 +138,16 @@ public class  ScientificCalculator {
         System.out.println("Result: " + result);
 
     }
-    
+    public static double sin(double x){
+        return Math.sin(x);
+    }
+    private static void calculateSine(Scanner InputReader) {
+        System.out.print("Enter the number: ");
+        double x = InputReader.nextDouble();
+        double result = sin(x);
+        System.out.println("Result: " + Math.toRadians(result));
+
+    }
 
 
 
