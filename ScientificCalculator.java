@@ -216,6 +216,34 @@ public class  ScientificCalculator {
 
 
     }
+    public static long roundNumber(double num) {
+        return Math.round(num);
+    }
+
+    private static void calculateroundNumber(Scanner InputReader) {
+        System.out.println("Enter number:");
+        double num = InputReader.nextDouble();
+        System.out.println("Result:"+" "+roundNumber(num));
+    }
+    public static double ceilingNumber(double num) {
+        return Math.ceil(num);
+    }
+
+    private static void calculateceilingNumber(Scanner InputReader) {
+        System.out.println("Enter number:");
+        double num = InputReader.nextDouble();
+        System.out.println("Result:"+" "+ceilingNumber(num));
+    }
+    public static double floorNumber(double num) {
+        return Math.ceil(num);
+    }
+
+    private static void calculatefloorNumber(Scanner InputReader) {
+        System.out.println("Enter number:");
+        double num = InputReader.nextDouble();
+        System.out.println("Result:"+" "+floorNumber(num));
+    }
+
 
 
 
