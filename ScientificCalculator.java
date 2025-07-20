@@ -209,7 +209,7 @@ public class  ScientificCalculator {
         return Math.abs(num);
     }
 
-    private static void calculateAbsoluteValueScanner InputReader) {
+    private static void calculateAbsoluteValue(Scanner InputReader) {
         System.out.println("Enter number:");
         double num = InputReader.nextDouble();
         System.out.println("Result:"+" "+AbsoluteValue(num));
