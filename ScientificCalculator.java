@@ -138,26 +138,46 @@ public class  ScientificCalculator {
         System.out.println("Result: " + result);
 
     }
-    public static double sin(double x){
-        return Math.sin(x);
+    public static double sin(double radians) {
+        return Math.sin(radians);
     }
-    private static void calculateSine(Scanner InputReader) {
-        System.out.print("Enter the number: ");
-        double x = InputReader.nextDouble();
-        double result = sin(x);
-        System.out.println("Result: " + Math.toRadians(result));
 
+    private static void calculateSine(Scanner inputReader) {
+        System.out.print("Enter angle in degrees: ");
+        double degrees = inputReader.nextDouble();
+        double radians = Math.toRadians(degrees);
+        double result = sin(radians);
+        System.out.println("Result: " + result);
     }
-    public static double cos(double x){
-        return Math.cos(x);
-    }
-    private static void calculateCosine(Scanner InputReader) {
-        System.out.print("Enter the number: ");
-        double x = InputReader.nextDouble();
-        double result = cos(x);
-        System.out.println("Result: " + Math.toRadians(result));
 
+    public static double cos(double radians) {
+        return Math.cos(radians);
     }
+
+    private static void calculateCosine(Scanner inputReader) {
+        System.out.print("Enter angle in degrees: ");
+        double degrees = inputReader.nextDouble();
+        double radians = Math.toRadians(degrees);
+        double result = cos(radians);
+        System.out.println("Result: " + result);
+    }
+
+    public static double tangent(double radians) {
+        return Math.tan(radians);
+    }
+
+    private static void calculateTangent(Scanner inputReader) {
+        System.out.print("Enter angle in degrees: ");
+        double degrees = inputReader.nextDouble();
+        if (degrees % 180 == 90) {
+            System.out.println("Tangent is undefined at " + degrees + " degrees.");
+            return;
+        }
+        double radians = Math.toRadians(degrees);
+        double result = tangent(radians);
+        System.out.println("Result: " + result);
+    }
+
 
 
 
