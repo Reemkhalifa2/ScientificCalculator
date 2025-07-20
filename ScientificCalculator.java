@@ -6,8 +6,12 @@ public class  ScientificCalculator {
         DisplayMenu();
         System.out.println("Choose an operation: ");
         boolean continueCalculation = true;
+
         while (continueCalculation){
             choice = InputReader.nextInt();
+            if (choice == 0) {
+                break; // this exits the while loop
+            }
             switch (choice){
                 case 1:
                     Addition(InputReader);break;
@@ -17,16 +21,13 @@ public class  ScientificCalculator {
                     Multiplication(InputReader);break;
                 case 4:
                     Division(InputReader);break;
+                default:
+                    System.out.println("Invalid choice. Please choose from the menu.");
+                    break;
             }
-
 
         }
         InputReader.close();
-
-
-
-
-
 
     }
     public static void DisplayMenu(){
@@ -34,6 +35,7 @@ public class  ScientificCalculator {
         System.out.println("2) subtraction");
         System.out.println("3) multiply");
         System.out.println("4) divide");
+        System.out.println("0) Exit");
     }
     public static double add(double num1, double num2) {
         // Logic for addition
