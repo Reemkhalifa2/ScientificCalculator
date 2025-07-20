@@ -205,6 +205,17 @@ public class  ScientificCalculator {
         }
 
     }
+    public static double AbsoluteValue(double num) {
+        return Math.abs(num);
+    }
+
+    private static void calculateAbsoluteValueScanner InputReader) {
+        System.out.println("Enter number:");
+        double num = InputReader.nextDouble();
+        System.out.println("Result:"+" "+AbsoluteValue(num));
+
+
+    }
 
 
 
